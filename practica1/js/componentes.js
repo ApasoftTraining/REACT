@@ -1,7 +1,7 @@
 
 
-import React from "https://unpkg.com/react@18/umd/react.development.js";
-import ReactDOM from "https://unpkg.com/react-dom@18/umd/react-dom.development.js";
+import React from "../librerias/react";
+import ReactDOM from "../librerias/react-dom";
 
 function ElementoPrincipal() {
     return (
