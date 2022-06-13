@@ -12,8 +12,4 @@
       - principal
 	  - barra estado
    En "principal" poneis un div con varios labels y cajas de texto, creado con Functional Component
-   En "barra_estado" un dic con dos botones "ok" y "Cancel". creado con un Class component2- Crear un HTML con dos div
-      - principal
-	  - barra estado
-   En "principal" poneis un div con varios labels y cajas de texto, creado con Functional Component
    En "barra_estado" un dic con dos botones "ok" y "Cancel". creado con un Class component
