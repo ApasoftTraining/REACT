@@ -15,27 +15,38 @@
     <h1> VER MI NOMBRE Y APELLIDOS</h1>
     <div id="principal"></div>
     <div id="barra_estado"></div>
+   
     <script type="text/babel">
-    
+      
 
+      function ElePrincipal() {
+        return (
+                <div>
+                <label>nombre</label>
+                <input type="text" name="nombre"/>
+                <label>apellidos</label>
+                <input type="text" name="apellidos"/>
+            </div>);
+            
+        };
+   
     //Componente con clase
-       class Ele1 extends React.Component{       
+       class EleBarra extends React.Component{       
          render(){
             return (
                 <div>
-                <p>Me llamo Alberto</p>
-                <p>Y eres profesor </p>
+                    <input type="button" value="OK"/>
+                    <input type="button" value="Cancel"/>
             </div>);
         }
         };
-
-       
-        
+                
         //Trabajar con DOM (Virtual DOM)
-        const contenedor = ReactDOM.createRoot(document.getElementById("principal"));
+        const principal = ReactDOM.createRoot(document.getElementById("principal"));
+        principal.render(<ElePrincipal />);
 
-        contenedor.render(<Ele1 />);
-
+        const barra = ReactDOM.createRoot(document.getElementById("barra_estado"));
+        barra.render(<EleBarra />);
     </script>
 
 </body>

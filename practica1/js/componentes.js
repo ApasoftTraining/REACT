@@ -1,5 +1,7 @@
 
 
+import React from "https://unpkg.com/react@18/umd/react.development.js";
+import ReactDOM from "https://unpkg.com/react-dom@18/umd/react-dom.development.js";
 
 function ElementoPrincipal() {
     return (
@@ -17,3 +19,5 @@ const Ele1= ()=>{
         <p>Y eres profesor de REACT</p>
     </div>);
 };
+
+export default Ele1;
