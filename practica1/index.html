@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera aplicacion REACT</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <h1> APLICACION REACT INICIAL</h1>
+    <div id="principal"></div>
+    <script  type="text/babel">
+        //Importar las librerias de REACT
+        //Importa la librería de BABEL
+        //Indicar que el scrip usa BABEL
+         const contenedor=document.getElementById("principal");
+
+         //Contiene JSX
+         const elemento=<h2>Esto es REACT</h2>;
+
+         //Trabajar con DOM (Virtual DOM)
+         ReactDOM.render(elemento,contenedor);
+
+    </script>
+</body>
+</html>
