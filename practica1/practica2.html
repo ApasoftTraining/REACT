@@ -23,10 +23,19 @@
                 <p>Y eres profesor </p>
             </div>);
         };
+
+        //Arrow Function
+        const Ele1= ()=>{
+            return (
+                <div>
+                <p>Me llamo Alberto</p>
+                <p>Y eres profesor de REACT</p>
+            </div>);
+        }
         //Trabajar con DOM (Virtual DOM)
         const contenedor = ReactDOM.createRoot(document.getElementById("principal"));
 
-        contenedor.render(<ElementoPrincipal />);
+        contenedor.render(<Ele1 />);
 
     </script>
 
