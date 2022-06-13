@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <h1> VER MI NOMBRE Y APELLIDOS</h1>
+    <div id="principal"></div>
+    <div id="barra_estado"></div>
+    <script type="text/babel">
+    
+
+    //Componente con clase
+       class Ele1 extends React.Component{       
+         render(){
+            return (
+                <div>
+                <p>Me llamo Alberto</p>
+                <p>Y eres profesor </p>
+            </div>);
+        }
+        };
+
+       
+        
+        //Trabajar con DOM (Virtual DOM)
+        const contenedor = ReactDOM.createRoot(document.getElementById("principal"));
+
+        contenedor.render(<Ele1 />);
+
+    </script>
+
+</body>
+
+</html>
