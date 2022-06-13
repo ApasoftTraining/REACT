@@ -1,0 +1,19 @@
+-Navegador
+-Visual Studio Code
+  --> ES7-React/redux..
+  --> Simple React snippets
+-Node 
+
+
+1- Crear un HTML donde vamos a pintar nuestro nombre y apellidos
+   - Con y sin JSX
+   
+2- Crear un HTML con dos div
+      - principal
+	  - barra estado
+   En "principal" poneis un div con varios labels y cajas de texto, creado con Functional Component
+   En "barra_estado" un dic con dos botones "ok" y "Cancel". creado con un Class component2- Crear un HTML con dos div
+      - principal
+	  - barra estado
+   En "principal" poneis un div con varios labels y cajas de texto, creado con Functional Component
+   En "barra_estado" un dic con dos botones "ok" y "Cancel". creado con un Class component
