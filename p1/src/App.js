@@ -1,6 +1,7 @@
 
 import './App.css';
 import Alumno from './Componentes/Alumno';
+import Argumentos from './Componentes/Argumentos';
 import Fragmento from './Componentes/Fragmento';
 import Profesor from './Componentes/Profesor';
 import Variables from './Componentes/Variables';
@@ -16,6 +17,8 @@ function App() {
       <Alumno />
       <h2>Elemento Variables</h2>
       <Variables />
+      <h2>Elemento Argumentos</h2>
+      <Argumentos nombre="Pedro" ape1="Perez" ape2="XXXXX" />
     </div>
   );
 }
