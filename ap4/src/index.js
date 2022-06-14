@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+//import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Cabecera from './Componentes/Cabecera';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+const cabecera = ReactDOM.createRoot(document.getElementById('cabecera'));
+cabecera.render(
+    <Cabecera /> 
 );
 
 // If you want to start measuring performance in your app, pass a function
