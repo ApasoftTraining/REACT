@@ -21,3 +21,18 @@
 
 4- Crear un componente que se llame Nomina que tenga 2 argumentos: Salario e IRPF 
    Pintar el salario completo el irpf y el salario neto (salario completo-irpf)
+
+5- Crear un componente llamado Articulo qwue admita como argumentos:
+       cabecera
+       cuerpo
+       pie  
+   Implementar sustituyendo el contenido del articulo
+               <article>
+                     <header>
+                        <h1>CABECERA</h1>
+                     </header>
+                     <p>CUERPO</p>        
+                     <footer>
+                        <h2>PIE</h2>
+                     </footer>
+               </article>
