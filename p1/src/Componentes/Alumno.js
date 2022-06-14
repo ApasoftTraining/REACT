@@ -10,5 +10,4 @@ function Alumno() {
   )
 };
 
-
 export default Alumno;
