@@ -13,6 +13,16 @@ const coche={
     matricula: "m-1000",
     pvp: 1000
 }
+
+//Variables de entrada
+const nombre="alberto";
+const ape1="rodriguez";
+const ape2="sanchez";
+
+//Función iniciales
+const iniciales=(n,a1,a2)=>{
+    return `${n[0]}.${a1[0]}.${a2[0]}`
+}
  
 
 function Variables() {
@@ -34,6 +44,7 @@ function Variables() {
         <p>Objeto: { JSON.stringify(coche) } </p>
         <p>Funcion {pintar()}</p>
         <p>Funcion con parámetros {sumar(10,20)} </p>
+        <p>Iniciales: { iniciales(nombre,ape1,ape2)  }</p>
 
     </>
   )
