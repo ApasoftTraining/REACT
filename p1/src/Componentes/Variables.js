@@ -7,20 +7,21 @@ const pintar= ()=>{
 const sumar= (a,b)=>{
     return a+b;
 }
+const texto="hola";
 
-
+const coche={
+    matricula: "m-1000",
+    pvp: 1000
+}
+ 
 
 function Variables() {
 
-   const texto="hola";
+   
    const numero=100;
    const v=true;
    const array=[10,20,30,40];
-   const coche={
-       matricula: "m-1000",
-       pvp: 1000
-   }
-    
+  
   return (
     <>
         <p>Estoy en Variables</p>
