@@ -2,6 +2,7 @@
 import './App.css';
 import Alumno from './Componentes/Alumno';
 import Profesor from './Componentes/Profesor';
+import Variables from './Componentes/Variables';
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
       <Profesor />
       <h2> Elemento Alumno</h2>
       <Alumno />
+      <h2> Elemento Variables</h2>
+      <Variables />
     </div>
   );
 }
