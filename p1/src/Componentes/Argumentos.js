@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 
 
@@ -16,6 +17,12 @@ function Argumentos(props) {
 
     </>
   )
+}
+
+Argumentos.propTypes={
+  nombre: PropTypes.string,
+  ape1: PropTypes.string,
+  ape2: PropTypes.string
 }
 
 export default Argumentos
