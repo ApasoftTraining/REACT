@@ -6,6 +6,7 @@ import Argumentos1 from './Componentes/Argumentos1';
 import Argumentos2 from './Componentes/Argumentos2';
 import Fragmento from './Componentes/Fragmento';
 import Profesor from './Componentes/Profesor';
+import PropDefecto from './Componentes/PropsDefecto';
 import PropTipos from './Componentes/PropTipos';
 import Variables from './Componentes/Variables';
 
@@ -28,6 +29,8 @@ function App() {
       <Argumentos2 sueldo="1000" irpf={15} arg1="hola2" arg2="pepe" arr1={[1,2,3,4]}/>
       <h2>Elemento Tipos de Propiedades</h2>
       <PropTipos sueldo={1000} irpf={15} arg1="hola" arg2="pepe" arr1={[1,2,3,4]}/>
+      <h2>Elemento Propiedades con valores por defecto</h2>
+      <PropDefecto  arg1="hola" arg2="pepe" arr1={[1,2,3,4]}/>
     </div>
   );
 }
