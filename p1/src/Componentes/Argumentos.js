@@ -8,10 +8,10 @@ const iniciales=(n,a1,a2)=>{
 }
  
 
-function Argumentos( props) {  
+function Argumentos(props) {  
   return (
     <>
-        
+        <p>El primer argumento es {props.arg1} </p>
         <p>Iniciales: { iniciales(props.nombre,props.ape1,props.ape2)  }</p>
 
     </>

@@ -18,7 +18,7 @@ function App() {
       <h2>Elemento Variables</h2>
       <Variables />
       <h2>Elemento Argumentos</h2>
-      <Argumentos nombre="Pedro" ape1="Perez" ape2="XXXXX" />
+      <Argumentos arg1="hola" nombre="Pedro" ape1="Perez" ape2="XXXXX" />
     </div>
   );
 }
