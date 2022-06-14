@@ -13,3 +13,8 @@
 	  - barra estado
    En "principal" poneis un div con varios labels y cajas de texto, creado con Functional Component
    En "barra_estado" un dic con dos botones "ok" y "Cancel". creado con un Class component
+   
+3- Dentro de Variables.js
+   Crear 3 variables: nombre, ape1 y ape2
+   Crear una función que devuelva las iniciales del nobmre (funcion argumentos)
+   Renderizarla en el JSX como expresión
