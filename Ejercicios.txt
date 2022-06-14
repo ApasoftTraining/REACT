@@ -18,3 +18,6 @@
    Crear 3 variables: nombre, ape1 y ape2
    Crear una función que devuelva las iniciales del nobmre (funcion argumentos)
    Renderizarla en el JSX como expresión
+
+4- Crear un componente que se llame Nomina que tenga 2 argumentos: Salario e IRPF 
+   Pintar el salario completo el irpf y el salario neto (salario completo-irpf)
