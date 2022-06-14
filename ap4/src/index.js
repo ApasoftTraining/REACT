@@ -6,7 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import Cabecera from './Componentes/Cabecera';
 import Navegacion from './Componentes/Navegacion';
 import Lateral from './Componentes/Lateral';
-import Articulo from './Componentes/Articulo';
+
+import Seccion from './Componentes/Seccion';
 
 const cabecera = ReactDOM.createRoot(document.getElementById('cabecera'));
 cabecera.render(
@@ -24,9 +25,9 @@ lateral.render(
 );
 
 
-const articulo1 = ReactDOM.createRoot(document.getElementById('articulo1'));
-articulo1.render(
-    <Articulo cabecera="cabecera" cuerpo="kfghjjñlk  safhjkldsdjf lksd ajfl kñjsdjfdsfdfsalfk" pie="esto es el pie"/> 
+const seccion = ReactDOM.createRoot(document.getElementById('seccion'));
+seccion.render(
+   <Seccion />
 );
 /*
 // If you want to start measuring performance in your app, pass a function

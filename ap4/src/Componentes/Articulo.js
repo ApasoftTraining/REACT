@@ -1,8 +1,9 @@
 import React from 'react'
 
 function Articulo({ cabecera, cuerpo, pie }) {
+    
     return (
-       <>
+       <article>
             <header>
                 <h1>{cabecera}</h1>
             </header>
@@ -10,7 +11,7 @@ function Articulo({ cabecera, cuerpo, pie }) {
             <footer>
                 <h2>{pie}</h2>
             </footer>
-        </>
+        </article>
     )
 }
 
