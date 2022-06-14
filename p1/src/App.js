@@ -3,6 +3,7 @@ import './App.css';
 import Alumno from './Componentes/Alumno';
 import Argumentos from './Componentes/Argumentos';
 import Argumentos1 from './Componentes/Argumentos1';
+import Argumentos2 from './Componentes/Argumentos2';
 import Fragmento from './Componentes/Fragmento';
 import Profesor from './Componentes/Profesor';
 import Variables from './Componentes/Variables';
@@ -22,6 +23,8 @@ function App() {
       <Argumentos arg1="hola" nombre="Pedro" ape1="Perez" ape2="XXXXX" />
       <h2>Elemento Calculo salario</h2>
       <Argumentos1 sueldo={1000} irpf={15} />
+      <h2>Elemento Desestructuracion</h2>
+      <Argumentos2 sueldo={1000} irpf={15} arg1="hola2" arg2="pepe" arr1={[1,2,3,4]}/>
     </div>
   );
 }
