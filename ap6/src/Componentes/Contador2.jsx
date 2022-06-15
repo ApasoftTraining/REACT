@@ -30,10 +30,13 @@ function Contador2({ contador, caja }) {
     console.log(e.target.value);
     setDatoCaja(e.target.value);
   }
+  /// Texto, funcion
   return (
     <>
       <h1>Contador</h1>
       <h2> {c1}</h2>
+    
+       <Boton />
       <button onClick={aumentar}>Aumentar</button>
       <button onClick={disminuir}>Disminuir</button>
       <button onClick={reset}>Resetear</button>
