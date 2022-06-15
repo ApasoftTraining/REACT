@@ -9,7 +9,7 @@ import Salario from './Componentes/Salario'
 function App() {  
   return (
       //<Contador1 contador={100}  caja="valor inicial" />     
-      <Salario />
+      <Salario salario={1000}  irpf={15}/>
   )
 }
 
