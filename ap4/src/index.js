@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 //import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
 import Cabecera from './Componentes/Cabecera';
 import Navegacion from './Componentes/Navegacion';
 import Lateral from './Componentes/Lateral';
