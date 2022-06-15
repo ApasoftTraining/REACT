@@ -6,6 +6,7 @@ function Coche1() {
     //Definir un Array de Estado con Fabricantes 
   const [fabricantes, setFabricantes]=useState(['Renault','Citroen','Mercedes']);
   const [modelos,setModelos]=useState(['coupe','Berlina','4x4']);
+  const [aeorlineas, setAerolineas]=useState(['iberia','AirEuropa','BA']);
  
 
   return (
@@ -28,6 +29,15 @@ function Coche1() {
             )}            
         </ul>
         <AddElemento tipo="modelo" funcion={setModelos} />         
+
+        <h2> Aerolíneas</h2>
+         <ul>{
+               aeorlineas.map ( function f(aerolinea){
+                    return <li key={aerolinea}>  {aerolinea}  </li>;
+               }
+            )}            
+        </ul>
+        <AddElemento tipo="aerolinea" funcion={setAerolineas} />  
     </div>
   )
 }
