@@ -7,7 +7,7 @@ import Contador1 from './Componentes/Contador1'
 
 function App() {  
   return (
-      <Contador1 contador={100} />     
+      <Contador1 contador={100}  caja="valor inicial" />     
   )
 }
 
