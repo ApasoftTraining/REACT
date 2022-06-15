@@ -1,19 +1,19 @@
 import React from 'react'
 
-function Contador() {
+function Contador1() {
   let contador = 0;
 
-  const uno = (e) => {
+  const aumentar = (e) => {
     console.log(e);
-    contador = 1;
+    contador = contador+1;
     console.log(contador);
     document.getElementById("cont").innerHTML=contador;
     //document.getElementById("x").innerHTML = contador;
   }
 
-  const dos = (e) => {
+  const disminuir = (e) => {
     console.log(e);
-    contador = 2;
+    contador = contador-1;
     console.log(contador);
     document.getElementById("cont").innerHTML=contador;
    //document.getElementById("x").innerHTML = contador;
@@ -24,11 +24,10 @@ function Contador() {
     <>
       <h1>Contador</h1>
       <h2 id="cont"> {contador}</h2>
-      <button onClick={uno
-      }>Poner 1</button>
-      <button onClick={dos}>Poner 2</button>
+      <button onClick={aumentar}>Aumentar</button>
+      <button onClick={disminuir}>Disminuir</button>
     </>
   )
 }
 
-export default Contador
+export default Contador1
