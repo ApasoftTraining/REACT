@@ -1,29 +1,31 @@
 import React from 'react'
+import { useState } from 'react';
 
-function Contador1() {
-  let contador = 0;
+function Contador1( { contador}) {
+  
+  
+  const [c1, setC1  ]=useState(contador);
+
 
   const aumentar = (e) => {
     console.log(e);
-    contador = contador+1;
-    console.log(contador);
-    document.getElementById("cont").innerHTML=contador;
-    //document.getElementById("x").innerHTML = contador;
+    setC1(c1+1);
+    
+   
   }
 
   const disminuir = (e) => {
     console.log(e);
-    contador = contador-1;
-    console.log(contador);
-    document.getElementById("cont").innerHTML=contador;
-   //document.getElementById("x").innerHTML = contador;
+    setC1(c1-1);
+    
+   
   }
 
 
   return (
     <>
       <h1>Contador</h1>
-      <h2 id="cont"> {contador}</h2>
+      <h2> {c1}</h2>
       <button onClick={aumentar}>Aumentar</button>
       <button onClick={disminuir}>Disminuir</button>
     </>
