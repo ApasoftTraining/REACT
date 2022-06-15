@@ -1,9 +1,10 @@
 import React from 'react'
+function Boton( {texto, metodo }) {
 
-function Boton() {
-  return (
-    <div>Boton</div>
-  )
+    //Comandos 
+    return (  
+      <button onClick={ metodo }> { texto.toUpperCase() } </button>
+    );
 }
 
 export default Boton

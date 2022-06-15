@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import Boton from './Boton';
 
 function Contador2({ contador, caja }) {
 
@@ -36,10 +37,9 @@ function Contador2({ contador, caja }) {
       <h1>Contador</h1>
       <h2> {c1}</h2>
     
-       <Boton />
-      <button onClick={aumentar}>Aumentar</button>
-      <button onClick={disminuir}>Disminuir</button>
-      <button onClick={reset}>Resetear</button>
+      <Boton metodo={aumentar} texto="Aumentar" />
+      <Boton metodo={disminuir} texto="Disminuir"/>
+      <Boton metodo={reset} texto="Resetear" />
 
       <input type="text" value={dato_caja} onChange={pintar_caja} />
       <p> {dato_caja.toUpperCase()} </p>
