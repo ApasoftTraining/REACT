@@ -2,22 +2,27 @@ import React from 'react'
 import { useState,useEffect } from 'react'
 import Temporizador from './Temporizador';
 
-function Empleado2() {
+function Empleado3() {
 
   //Definir la variable de estado Empleado
-  const [empleado, setempleado] = useState({});
+  const [empleado, setempleado] = useState({ nombre: 'Alberto',
+      apellidos: 'Rodriguez',
+      edad: 59,
+      tipo: ""
 
-  //Evolucion de Empleado uando una sola funcion
-  
+      });
+
+  //Indicar lo siguiente según cambie la edad
+  /*
+     0-14 --tipo="niño" 
+     14-19-  tipo=adolescente
+     20-35-  joven
+     36
+
+  */
   useEffect(() => {
     
-    setempleado({
-      nombre: 'Alberto',
-      apellidos: 'Rodriguez kkkkk',
-      edad: 59
-    })
-  
-  },[]);
+  });
   
   function controlar(e) {
     setempleado({ ...empleado, [e.target.name]: e.target.value })
@@ -47,4 +52,4 @@ function Empleado2() {
   )
 }
 
-export default Empleado2
+export default Empleado3
