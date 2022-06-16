@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import Temporizador from './Temporizador';
 
 function Empleado1() {
 
@@ -34,11 +35,8 @@ function Empleado1() {
       <label>Edad</label>
       <input type="text" value={empleado.edad} name="edad" onChange={controlar} />
       <br></br>
-
       <input type="submit" value="Guardar" />
-
     </form>
-    
     </>
   )
 }
