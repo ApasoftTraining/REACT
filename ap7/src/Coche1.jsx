@@ -7,7 +7,7 @@ function Coche1() {
   const [fabricantes, setFabricantes]=useState(['Renault','Citroen','Mercedes']);
   const [modelos,setModelos]=useState(['coupe','Berlina','4x4']);
   const [aeorlineas, setAerolineas]=useState(['iberia','AirEuropa','BA']);
- 
+   use
 
   return (
     <div>
@@ -18,7 +18,9 @@ function Coche1() {
                }
             )}            
         </ul>
-        <AddElemento tipo="fabricante" funcion={setFabricantes} />         
+        <AddElemento              
+          tipo="fabricante" funcion={setFabricantes} 
+          />         
          <br>
          </br>
          <h2> Modelos de Coches</h2>
