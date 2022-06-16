@@ -36,9 +36,9 @@ function Contador2({ contador, caja }) {
     <>
       <h1>Contador</h1>
       <h2> {c1}</h2>
-    
+
       <Boton metodo={aumentar} texto="Aumentar" />
-      <Boton metodo={disminuir} texto="Disminuir"/>
+      <Boton metodo={disminuir} texto="Disminuir" />
       <Boton metodo={reset} texto="Resetear" />
 
       <input type="text" value={dato_caja} onChange={pintar_caja} />
