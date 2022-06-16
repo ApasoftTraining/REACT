@@ -13,12 +13,12 @@ let empleados=[{
   edad: 59
 },
 {
-  nombre: 'Alberto1',
+  nombre: 'Pedro',
   apellidos: 'Rodriguez Garcia1',
   edad: 90
 },
 {
-  nombre: 'Alberto2',
+  nombre: 'Rosa',
   apellidos: 'Rodriguez Garcia2',
   edad: 90
 },
@@ -29,7 +29,7 @@ let empleados=[{
 function App() {  
   return (
     <>
-    <Empleado4  />
+    <Empleado4 emple={empleados} />
     <Temporizador />   
     </>
   )

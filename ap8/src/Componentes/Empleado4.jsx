@@ -2,17 +2,20 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import Temporizador from './Temporizador';
 
-function Empleado4() {
+function Empleado4({ emple }) {
 
   //Definir la variable de estado Empleado
-  const [empleado, setempleado] = useState({});
+  const [empleado, setempleado] = useState({
+    nombre: '',
+    apellidos: '',
+    edad: ''
+  });
 
-  const [empleados, setempleados]= useState([]);
+  const [empleados, setempleados] = useState([]);
 
   //Ejecutar solo al principio
   useEffect(() => {
-
-  
+    setempleados(emple);
   }, []);
 
 
@@ -26,19 +29,28 @@ function Empleado4() {
     evento.preventDefault();
     console.log(evento.target.name);
     console.log(empleado);
+    //Añado el nuevo empleado al array empleados
+    setempleados([...empleados, empleado]);
+    
+    //Limpiar los datos del formulario
+    setempleado({
+      nombre: '',
+      apellidos: '',
+      edad: 0
+    });
   }
 
   return (
     <>
-       <h2> LISTA DE EMPLEADOS</h2>
-       <ul>
-            <li>Empleado1</li>
-            <li>Empleado2</li>
-            <li>Empleado3</li>
-            <li>Empleado4</li>
+      <h2> LISTA DE EMPLEADOS</h2>
+      <ul>
+        {empleados.map(function f(emple) {
+          return <li key={emple.nombre}>  {emple.nombre} - {emple.apellidos} </li>;
+        })
+        }
+      </ul>
 
-       </ul>
-       <h2>Añadir empleado</h2>
+      <h2>Añadir empleado</h2>
       <form name="form1" onSubmit={grabar}>
         <label>Nombre</label>
         <input type="text" value={empleado.nombre} name="nombre" onChange={controlar} />
@@ -49,7 +61,6 @@ function Empleado4() {
         <label>Edad</label>
         <input type="text" value={empleado.edad} name="edad" onChange={controlar} />
         <br></br>
-        <p>Tipo: {empleado.tipo} </p>
         <input type="submit" value="Añadir empleado" />
       </form>
     </>
