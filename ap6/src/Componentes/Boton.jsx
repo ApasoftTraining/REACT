@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import '../Estilos/boton.css';
+
+
 function Boton( {texto, metodo }) {
 
     //Comandos 
     return (  
-      <button onClick={ metodo }> { texto.toUpperCase() } </button>
+      <button onClick={ metodo }   className='boton-reset' > { texto.toUpperCase() } </button>
     );
 }
 
