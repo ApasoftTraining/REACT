@@ -32,14 +32,17 @@ function Contador2({ contador, caja }) {
     setDatoCaja(e.target.value);
   }
   /// Texto, funcion
+  //Estilo true --> boton-normal
+  //Estilo-false --> boton-reset
   return (
     <>
       <h1>Contador</h1>
       <h2> {c1}</h2>
 
-      <Boton metodo={aumentar} texto="Aumentar" />
-      <Boton metodo={disminuir} texto="Disminuir" />
-      <Boton metodo={reset} texto="Resetear" />
+      
+      <Boton metodo={aumentar} texto="Aumentar" estilo={true} />
+      <Boton metodo={disminuir} texto="Disminuir" estilo={true}/>
+      <Boton metodo={reset} texto="Resetear" estilo={false}/>
 
       <input type="text" value={dato_caja} onChange={pintar_caja} />
       <p> {dato_caja.toUpperCase()} </p>
