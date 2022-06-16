@@ -11,11 +11,14 @@ function Empleado() {
   });
 
 
-  function grabar(){
-    consolg.log(empleado);
+  function grabar(evento){
+    evento.preventDefault();
+    console.log(evento.target.name);
+    console.log(empleado);
   }
+
   return (
-    <form onSubmit={grabar}>
+    <form name="form1" onSubmit={grabar}>
        <label>Nombre</label>
        <input type="text" value={empleado.nombre} name="nombre"/>
        <br></br>
