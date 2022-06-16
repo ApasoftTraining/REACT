@@ -1,8 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
-
-function Empleado() {
+function Empleado1() {
 
   //Definir la variable de estado Empleado
   const [empleado, setempleado] = useState({
@@ -11,14 +10,10 @@ function Empleado() {
     edad: 59
   });
 
-  function controlar_nombre(evento) {
-    setempleado({...empleado,["nombre"]: evento.target.value })
-  }
-  function controlar_apellidos(e) {
-    setempleado({ ...empleado, ["apellidos"]: e.target.value })
-  }
-  function controlar_edad(e) {
-    setempleado({ ...empleado, ["edad"]: e.target.value })
+  //Evolucion de Empleado uando una sola funcion
+  
+  function controlar(e) {
+    setempleado({ ...empleado, [e.target.name]: e.target.value })
   }
 
   function grabar(evento) {
@@ -31,13 +26,13 @@ function Empleado() {
     <>
     <form name="form1" onSubmit={grabar}>
       <label>Nombre</label>
-      <input type="text" value={empleado.nombre} name="nombre" onChange={controlar_nombre}/>
+      <input type="text" value={empleado.nombre} name="nombre" onChange={controlar}/>
       <br></br>
       <label>Apellidos</label>
-      <input type="text" value={empleado.apellidos} name="apellidos" onChange={controlar_apellidos}/>
+      <input type="text" value={empleado.apellidos} name="apellidos" onChange={controlar}/>
       <br></br>
       <label>Edad</label>
-      <input type="text" value={empleado.edad} name="edad" onChange={controlar_edad} />
+      <input type="text" value={empleado.edad} name="edad" onChange={controlar} />
       <br></br>
 
       <input type="submit" value="Guardar" />
@@ -48,4 +43,4 @@ function Empleado() {
   )
 }
 
-export default Empleado
+export default Empleado1

@@ -16,9 +16,8 @@ function AddPropiedad({ funcion }) {
 
   function grabar(evento) {
     evento.preventDefault();
-    funcion;
-    {...v, [propiedad]: valor };
-
+    funcion({...empelado,[propiedad]: valor });
+    
     return (
       <form name="form1" onSubmit={grabar}>
         <label>Nombre Propiedad</label>
