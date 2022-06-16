@@ -11,15 +11,37 @@ function Empleado5() {
     edad: ''
   });
 
+  const [x, setX] = useState(true);
+
   const [empleados, setempleados] = useState([]);
 
   //Ejecutar solo al principio
   //Cargar la lista de empleados
+/*7
   useEffect(() => {
-    fetch('http://example.com/movies.json')
-      .then(response => response.json())
-      .then(data => console.log(data));
-  }, []);
+    if (x) {
+      fetch('http://localhost:5000/empleados')
+        .then(response => response.json())
+        .then(data => setempleados(data));
+      setX(false);
+    }
+    else {
+      setempleado({ ...empleado, ["nombre"]: empleado.nombre.toUpperCase() })
+    }
+  }, [empleado.nombre]);
+*/
+
+  useEffect(() => {
+    fetch('http://localhost:5000/empleados')
+        .then(response => response.json())
+        .then(data => setempleados(data));
+  },[]);
+
+ useEffect(() => {
+  setempleado({ ...empleado, ["nombre"]: empleado.nombre.toUpperCase() })
+  }, [empleado.nombre]);
+  
+  
 
 
 
