@@ -10,6 +10,10 @@ function Empleado() {
     edad: 59
   });
 
+
+  function grabar(){
+    consolg.log(empleado);
+  }
   return (
     <form onSubmit={grabar}>
        <label>Nombre</label>
