@@ -3,13 +3,12 @@
 import { useState, useEffect } from "react";
 
 
-function useGetFotos(url) {
+ function useGetFotos(url) {
 
-    const [datos,setdatos]=useState(null);
+    const [datos,setdatos]=useState([]);
 
-    useEffect(() => {
-      
-      fetch(url)
+       useEffect(() => {      
+       fetch(url)
          .then(response=> response.json())
          .then(data =>  setdatos(data));
          
@@ -18,8 +17,7 @@ function useGetFotos(url) {
       }
     }, [url]);
 
-    return [datos];
-    
+    return datos;    
   
 }
 

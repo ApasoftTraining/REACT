@@ -1,42 +1,48 @@
 import React from 'react'
-import {useState} from 'react';
+import { useState,useEffect } from 'react';
+import {Table} from 'react-bootstrap'
 import useGetFotos from '../hooks/useGetFotos';
 
 function Fotos() {
 
-  const [url, seturl] = useState('https://jsonplaceholder.typicode.com/photos');
+    const [url, seturl] = useState('https://jsonplaceholder.typicode.com/photos');
     
-  const resultado=useGetFotos(url);
+        const resultado =   useGetFotos(url);
 
-  return (
-    <div> 
-        <p className="display-2">LISTADO DE FOTOS</p>
+   
 
-        <table className="table table-primary table-striped">
-               <tr>
-                   <th>Album</th>
-                   <th>Titulo</th>
-                   <th>imagen</th>
-               </tr>
-               {
-                resultado &&
-                resultado.map((album)=>{
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+    return (
+        <div>
+            <p className="display-2">LISTADO DE FOTOS</p>
+
+           
+            <table>
+                <thead>
+                  <tr>
+                    <td>id</td>
+                    <td>titulo</td>
+                    <td>imagen</td>
                     </tr>
-
-                 })
-
-
-               }
-
-        </table>
-        <button className="btn btn-primary">ACEPTAR</button>
-        
-    </div>
-  )
+                    </thead>
+                <tbody>
+                  {
+                    resultado &&
+                    resultado.map((item) => {
+                        return (
+                            <tr key={item.id}>
+                                <td>{item.id}</td>
+                                <td>{item.title}</td>
+                                <td><img src={item.thumbnailUrl}/></td>
+                            </tr>)
+                    })
+                  }
+                  </tbody>
+            
+         </table>
+               
+            <button className="btn btn-primary">ACEPTAR</button>
+        </div>
+    )
 }
 
 export default Fotos
